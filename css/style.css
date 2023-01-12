@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:wght@300;400&display=swap');
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+  /* header */
+
+  .header {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background: #FFFFFF;
+  }
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav__list {
+  display: flex;
+  list-style: none;
+  column-gap: 70px;
+}
+
+.nav__list a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-family: 'Josefin Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #100E18;
+  text-decoration: none;
+}
+
+.nav__list a sup {
+  font-family: 'Josefin Sans';
+  font-size: 12px;
+  color: #C4140F;
+  position: absolute;
+  top: -12px;
+  left: 35px;
+}
+
+.nav__menu {
+  position: relative;
+  display: flex;
+  column-gap: 36.20px;
+}
+
+.nav__menu a sup {
+  position: absolute;
+  left: 127px;
+  bottom: 15px;
+  font-size: 14px;
+  background: #FAFF05;
+  border-radius: 2px;
+  color: #100E18;
+  padding: 2px 6px;
+}
+
+.humburger{
+  display: none;
+  cursor: pointer;
+}
+
+.ham{
+  display: block;
+  width: 35px;
+  height: 3px;
+  background-color: black;
+  margin: 5px 0px;
+  border-radius: 10px;
+}
+
+  /* destinations */
+
+.destinations {
+  height: 960px;
+  background: #C4140F;
+}
+
+.destinations-content {
+  position: relative;
+  display: flex;
+}
+
+.destinations__left {
+  padding-top: 214px;
+  width: 50%;
+}
+
+.destinations__left h3 {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  color: #FFFFFF;
+}
+
+.destinations__left hr {
+  margin: 60px 0px;
+  width: 100px;
+  height: 0px;
+  border: 1px solid #FAFF05;
+}
+
+.left__title{
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 80px;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  width: 577px;
+  height: 240px;
+  margin-bottom: 60px;
+}
+
+.left__btn {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  background: #FAFF05;
+  color: #100E18;
+  padding: 20px 60px;
+  cursor: pointer;
+}
+
+.destinations__right {
+  position: relative;
+  width: 50%;
+}
+
+.right__img img:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 210px;
+  width: 100%;
+  height: auto;
+  max-width: 635px;
+  max-height: 750px;
+}
+
+.right__img img:nth-child(2) {
+  position: absolute;
+  left: 75px;
+  top: 63px;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  max-width: 486px;
+  max-height: 897px;
+}
+
+.right__img img:nth-child(3) {
+  position: absolute;
+  top: 462px;
+  left: -715px;
+  max-width: 1523px;
+  max-height: 336px;
+  width: -webkit-fill-available;
+}
+
+  /* bellafit */
+
+.bellafit-content {
+  padding: 180px 0px;
+}
+
+.bellafit__title {
+  display: flex;
+  justify-content: center;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 40px;
+  letter-spacing: 0.15em;
+  text-transform: capitalize;
+  color: #8A8A8A;
+}
+
+.bellafit__text {
+  display: flex;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.bellafit__text h3{
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  color: #100E18;
+  max-width: 1324px;
+  height: 240px;
+}
+
+.bellafit__btn {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.bellafit__btn a{
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  background: #FAFF05;
+  color: #100E18;
+  padding: 20px 60px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* personaltrening  */
+
+.personaltrening {
+  height: 100vh;
+  background-image: url('../img/Image\ Woman.jpg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+.personaltrening-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 400px;
+  column-gap: 40px;
+}
+
+.personaltrening__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 420px;
+  max-height: 360px;
+  border: 1px solid rgb(255, 255, 255, 0.2) ;
+  border-top: 2px solid #FAFF05;
+  padding: 10px;
+}
+
+.personaltrening__box h1 {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  max-width: 320px;
+  max-height: 80px;
+}
+
+.personaltrening__box p {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #8A8A8A;
+  max-width: 320px;
+  max-height: 160px;
+  padding-top: 15px;
+}
+
+.personaltrening__yellow {
+  padding: 40px;
+  background: #FAFF05;
+  height: 416px;
+  width: 420px;
+}
+
+.personaltrening__yellow h1{
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: #100E18;
+  max-width: 320px;
+  max-height: 80px;
+}
+
+.personaltrening__yellow p{
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #100E18;
+  max-width: 320px;
+  max-height: 160px;
+  padding-top: 15px;
+}
+
+.personaltrening__yellow a {
+  position: relative;
+  top: 40px;
+  left: 0;
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 5px;
+  text-transform: capitalize;
+  color: #C4140F;
+  text-decoration: none;
+}
+
+.personaltrening__yellow a::after {
+  content: '';
+  background-image: url('../img/Arrow.svg');
+  width: 49.5px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 130px;
+}
+
+/* girltraning */
+
+.girltraning {
+  background-image: url('../img/1.svg');
+  background-position: center; 
+  background-repeat: no-repeat;
+  max-width: 1920px;
+  height: 1120px;
+}
+
+.girltraning-content {
+  position: relative;
+  top: 215px;
+  left: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #FFFFFF;
+  width: 600px;
+  height: 690px;
+  gap: 70px;
+}
+
+.girltraning__item h2{
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #100E18;
+}
+
+.girltraning__item p{
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 32px;
+  color: #100E18;
+  opacity: 0.7;
+  max-width: 450px;;
+  padding-top: 20px;
+}
+
+
+@media (max-width:1500px) {
+  .girltraning-content {
+    left: 50%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .bellafit__btn {
+    padding-top: 150px;
+  }
+  .right__img img:nth-child(3) {
+    max-width: 1123px;
+    left: -300px;
+  }
+  .girltraning-content {
+    left: 40%;
+  }
+}
+
+@media (max-width:1150px) {
+  .personaltrening {
+    height: 120vh;
+  }
+  .personaltrening-content {
+    padding-top: 30px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1080px) {
+  .destinations {
+    height: 1650px;
+  }
+  .destinations-content {
+    flex-direction: column;
+  }
+  .right__img img:nth-child(1) {
+    width: 635px;
+    height: 750px;
+  }
+  
+  .right__img img:nth-child(2) {
+    width: 486px;
+    height: 897px;
+  }
+  
+  .right__img img:nth-child(3) {
+    top: -202px;
+    left: 115px;
+  }
+  .humburger {
+    display: block;
+  }
+  .nav__logo {
+    display: none;
+  }
+  .nav__list {
+    display: none;
+  }
+  .right__img img:nth-child(3) {
+    right: -400px;
+    left: -10px;
+  }
+  .girltraning {
+    background-position:start;
+  }
+  .girltraning-content {
+    border: 1px solid #CCCFD8;
+    top: 1000px;
+    left: 150px;
+  }
+}
+
+@media (max-width: 970px) {
+  .destinations {
+    height: 1540px;
+  }
+  .destinations__left {
+    padding-top: 100px;
+}
+  .girltraning-content {
+    left: 90px;
+  }
+  .bellafit-content {
+    padding: 100px 0px;
+  }
+}
+
+@media (max-width: 880px) {
+  .destinations {
+    height: 1540px;
+  }
+  .destinations__left {
+    padding-top: 100px;
+}
+  .right__img img:nth-child(3) {
+    right: -300px;
+    left: 30px;
+  }
+  .bellafit__btn {
+     padding-top: 280px;
+  }
+  .girltraning-content {
+    left: 20px;
+  }
+}
+
+@media (max-width: 680px) {
+
+  .destinations {
+    height: 1200px;
+  }
+  .destinations__left {
+    padding-top: 50px;
+}
+  .right__img img:nth-child(1) {
+    max-width: 435px;
+    max-height: 450px;
+    top: 222px;
+  }
+  
+  .right__img img:nth-child(2) {
+    max-width: 286px;
+    max-height: 697px;
+  }
+  .girltraning-content {
+    left: 5px;
+  }
+  .bellafit__btn {
+    padding-top: 180px;
+ }
+ .girltraning-content {
+  width: 100%;
+}
+.bellafit-content {
+  padding: 50px 0px;
+}
+}
+
+@media (max-width: 610px) {
+  .right__img img:nth-child(3) {
+    right: -200px;
+    left: 30px;
+  }
+  .left__title {
+    font-size: 54px;
+    letter-spacing: 0.20em;
+    width: 477px;
+}
+  .bellafit__text h3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 50px;
+}
+}
+
+@media (max-width: 540px) {
+  .bellafit__btn {
+    padding-top: 200px;
+ }
+ .left__title {
+  font-size: 44px;
+  letter-spacing: 0.20em;
+  width: 377px;
+}
+.destinations {
+  height: 1200px;
+}
+.girltraning-content {
+  padding: 10px;
+}
+.left__btn {
+  font-size: 20px;
+  padding: 10px 40px;
+}
+}
+
+@media (max-width: 430px) {
+  .bellafit__btn {
+    padding-top: 350px;
+ }
+  .destinations {
+    height: 1025px;
+  }
+.right__img img:nth-child(1) {
+  max-width: 335px;
+  max-height: 350px;
+  top: 120px;
+}
+.right__img img:nth-child(2) {
+  max-width: 186px;
+  max-height: 597px;
+  top: 0;
+}
+.right__img img:nth-child(3) {
+  right: -160px;
+  left: 30px;
+}
+.left__btn {
+  font-size: 20px;
+  padding: 5px 20px;
+}
+.left__title {
+  font-size: 42px;
+  letter-spacing: 0.15em;
+  width: 317px;
+}
+.personaltrening__yellow {
+  padding: 20px;
+  height: 400px;
+  width: 340px;
+}
+}
+
+@media (max-width:395px) {
+  .destinations {
+    height: 1000px;
+  }
+}
